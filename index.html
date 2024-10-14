@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanPay Voting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Full-page project summary section with image -->
+  <section id="summarySection" class="full-page">
+    <div class="overlay-content">
+        <p>CleanPay is a smart waste management system using RFID cards to ensure fair payments for waste collection services. 
+        Customers make a single payment for multiple collections (e.g., 3-4 per month) and have their counts get reduced with each service. 
+        After using all their collection counts, they pay again.
+        The system promotes recycling by sorting recyclable and non-recyclable waste.
+        Payments and services are tracked via a website, with top-up options and confirmations through SMS or Email. 
+        <strong>CleanPay aims to provide transparency and fairness in waste collection services!</strong> 👍</p>
+        <button id="voteNow" class="center-btn">Vote Now</button>
+    </div>
+  </section>
+
+  <!-- Voting section (initially hidden) -->
+  <section id="votingSection" class="hidden">
+    <header>
+      <img src="images/logo.png" alt="CleanPay Logo" class="logo-medium">
+    </header>
+    <h2>Do you support implementing CleanPay Project in Kigali?</h2>
+    <button id="voteYes">Yes 👍</button>
+    <button id="voteNo">No 👎</button>
+    <div id="commentBox" style="display:none;">
+      <textarea id="noComment" placeholder="Place your comment!"></textarea>
+      <button id="sendComment" class="send-btn">Send</button>
+    </div>
+
+    <div>
+      <p>Yes Votes: <span id="voteCountYes">0</span></p>
+      <p>No Votes: <span id="voteCountNo">0</span></p>
+    </div>
+
+    <div class="comment-actions">
+      <button id="readComments" class="side-btn">Read Comments</button>
+      <button id="addComment" class="side-btn">Add Comments</button>
+    </div>
+
+    <div id="commentSidebar" class="hidden-sidebar">
+      <h3>Comments</h3>
+      <div id="commentsList"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <img src="images/footer-image.png" alt="Footer Image" class="footer-image">
+        <div class="overlay-text">
+          <p>Contact us: <a href="mailto:gersonali99@gmail.com">gersonali99@gmail.com</a></p>
+          <p>Location: Kigali, Rwanda</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
